@@ -5,6 +5,8 @@ Retrouvez ici un Sokoban au design simple jouable au clavier ou à la manette !
 
 ![Démo du jeu](/small.jpg?raw=true "Démo du jeu")
 
+Le jeu est disponible à cette adresse : http://arubinu.free.fr/sokoban/
+
 ## Clavier / Manette
 
 Les touches par défaut :
