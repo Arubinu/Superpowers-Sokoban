@@ -64,7 +64,16 @@ namespace Game.Main
   {
     preview = map;
   }
-
+/*
+  export function setCode( code: string )
+  {
+    for ( let i = 1; i <= 4; ++i )
+    {
+      let child = scene.getChild( 'Code' ).getChild( i.toString() ).getChild( 'Letter' );
+      child.textRenderer.setText( code[ i - 1 ] );
+    }
+  }
+*/
   // Methods
   export function init( actor: Sup.Actor, preview: Sup.TileMapRenderer )
   {
@@ -136,8 +145,8 @@ namespace Game.Main
     }
 
     ++delay;
-    let up = Game.Keys.getUp( true );
-    let down = Game.Keys.getDown( true );
+    let up = Game.Keys.getUp();
+    let down = Game.Keys.getDown();
     let left = Game.Keys.getLeft( true );
     let right = Game.Keys.getRight( true );
     plus( right && get() < 4 );
@@ -212,7 +221,7 @@ namespace Game.Main
     }
     else if ( valid ||  Game.Keys.getEnter( true ) )
     {
-      let level = Game.Level.getNumber( getCode() );
+      let level = Game.Level.getNumber( Game.Main.getCode() );
       if ( Game.debug )
         Sup.log( 'Game.code()', 'level: ' + level );
 

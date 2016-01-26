@@ -8,6 +8,22 @@ namespace Game.Level
     return ( level );
   }
 
+  export function getCode( level?: number ): string
+  {
+    if ( !level )
+      level = get();
+
+    let maps = Sup.get( 'Levels', Sup.Folder ).children;
+    for ( let map of maps )
+    {
+      let pos = map.indexOf( '.' );
+      if ( pos > 0 && map.substr( 0, pos ) == level.toString() )
+        return ( map.substr( pos + 1 ) );
+    }
+
+    return ( undefined );
+  }
+
   export function getNumber( level: string ): number
   {
     let maps = Sup.get( 'Levels', Sup.Folder ).children;
@@ -49,17 +65,14 @@ namespace Game.Level
     if ( !map )
       map = Game.Map.get();
 
-    for ( let child of children )
+    let code = getCode( level );
+    if ( code )
     {
-      let pos = child.indexOf( '.' );
-      if ( pos > 0 && child.substr( 0, pos ) == level.toString() )
-      {
-        Game.started( true );
-        map.setTileMap( 'Levels/' + child );
+      Game.started( true );
+      map.setTileMap( 'Levels/' + level.toString() + '.' + code );
 
-        set( parseInt( child.substr( 0, pos ) ) );
-        return ( get() );
-      }
+      set( level );
+      return ( get() );
     }
 
     return ( 0 );

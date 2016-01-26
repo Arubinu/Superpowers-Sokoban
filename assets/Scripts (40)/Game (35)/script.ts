@@ -7,10 +7,11 @@ namespace Game
   let mode: number;
   let items = [ 'Main', 'Game', 'Game', 'Game', 'Main', '', 'GameOver' ];
 
+  let touch: boolean = false;
   let swipe: Sup.Math.Vector2;
 
   export let score: number;
-  export const debug: boolean = true;
+  export const debug: boolean = false;
 
   export let change: boolean = false;
 
@@ -34,8 +35,11 @@ namespace Game
     if ( !started() && Game.Main.getDisabled().indexOf( getMode() ) >= 0 )
       number = 0;
 
-    Sup.log( 'Game.setMode( ' + number +' )' );
+    if ( debug )
+      Sup.log( 'Game.setMode( ' + number +' )' );
+
     mode = number;
+    touch = false;
     change = true;
     for ( let child of getItems() )
     {
@@ -111,7 +115,7 @@ namespace Game
       }
       scene.getChild( 'Level' ).textRenderer.setText( 'Niveau ' + Game.Level.get() );
       scene.getChild( 'Score' ).textRenderer.setText( '' );
-      scene.getChild( 'Code' ).textRenderer.setText( 'Code: ' + Game.Main.getCode() );
+      scene.getChild( 'Code' ).textRenderer.setText( 'Code: ' + Game.Level.getCode() );
 
       let x = Math.round( ( current.getTileMap().getWidth() - temporary.getTileMap().getWidth() ) / 2 );
       let y = Math.round( ( current.getTileMap().getHeight() - temporary.getTileMap().getHeight() ) / 2 );
@@ -153,9 +157,12 @@ namespace Game
     }
 
     let move = { x: 0, y: 0 };
-    if ( Sup.Input.wasTouchEnded( 0 ) )
+    if ( Sup.Input.wasTouchEnded( 0 ) && touch )
     {
-      Sup.log( 'Touch End' );
+      if ( debug )
+        Sup.log( 'Touch End' );
+
+      touch = false;
       let pos = Sup.Input.getTouchPosition( 0 );
       if ( swipe && pos )
       {
@@ -169,7 +176,10 @@ namespace Game
       }
     }
     else if ( Sup.Input.wasTouchStarted( 0 ) )
+    {
+      touch = true;
       swipe = Sup.Input.getTouchPosition( 0 );
+    }
 
     if ( Game.Keys.getUp( true ) )
       move.y = 1;
