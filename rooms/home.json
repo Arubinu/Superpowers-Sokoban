@@ -1,0 +1,504 @@
+{
+  "history": [
+    {
+      "timestamp": 1453646250026,
+      "author": "Arubinu",
+      "text": "Moi là j'essai de faire à peu près comme j'avais fait en C"
+    },
+    {
+      "timestamp": 1453646253894,
+      "author": "Anata",
+      "text": "mais encore des bugs ^^"
+    },
+    {
+      "timestamp": 1453646265808,
+      "author": "Arubinu",
+      "text": "https://github.com/Arubinu/sokoban"
+    },
+    {
+      "timestamp": 1453646266254,
+      "author": "Anata",
+      "text": "faut oublié la facon de faire en C ^^"
+    },
+    {
+      "timestamp": 1453646283677,
+      "author": "Arubinu",
+      "text": "Oui mais c'est presque la seule chose que je savais faire :P"
+    },
+    {
+      "timestamp": 1453646306052,
+      "author": "Anata",
+      "text": "presque"
+    },
+    {
+      "timestamp": 1453646314758,
+      "author": "Anata",
+      "text": "mais faut partir sur une nouvelle approche ^^"
+    },
+    {
+      "timestamp": 1453646322229,
+      "author": "Anata",
+      "text": "l'orienté objet de superpowers ^^"
+    },
+    {
+      "timestamp": 1453646328109,
+      "author": "Arubinu",
+      "text": "Je connais beaucoup de langages"
+    },
+    {
+      "timestamp": 1453646332525,
+      "author": "Arubinu",
+      "text": "Mais toujours complèxe"
+    },
+    {
+      "timestamp": 1453646347830,
+      "author": "Arubinu",
+      "text": "Et SuperPowers, je ne sais pas comment je suis tombé dessus"
+    },
+    {
+      "timestamp": 1453646350097,
+      "author": "Anata",
+      "text": "SDL, je l'utilisai pour faire mes jeux sur PSP"
+    },
+    {
+      "timestamp": 1453646353830,
+      "author": "Arubinu",
+      "text": "Mais c'est très intéressant"
+    },
+    {
+      "timestamp": 1453646360254,
+      "author": "Arubinu",
+      "text": "O.O PSP"
+    },
+    {
+      "timestamp": 1453646366741,
+      "author": "Anata",
+      "text": "le C , m'en servais sur GP32/Lynx/Nec ^^"
+    },
+    {
+      "timestamp": 1453646368014,
+      "author": "Arubinu",
+      "text": "Difficile non?"
+    },
+    {
+      "timestamp": 1453646375128,
+      "author": "Anata",
+      "text": "noin, easy sur psp ^^"
+    },
+    {
+      "timestamp": 1453646393086,
+      "author": "Arubinu",
+      "text": "-_- moi je connais à partir de la Nintendo :P"
+    },
+    {
+      "timestamp": 1453646406402,
+      "author": "Anata",
+      "text": "fais un peu de gb , snes"
+    },
+    {
+      "timestamp": 1453646416637,
+      "author": "Arubinu",
+      "text": "Sympa :)"
+    },
+    {
+      "timestamp": 1453646426592,
+      "author": "Anata",
+      "text": "mais bon, sdl, j'ai pas forcement trop aimé :("
+    },
+    {
+      "timestamp": 1453646432368,
+      "author": "Arubinu",
+      "text": "Moi non plus :/"
+    },
+    {
+      "timestamp": 1453646433875,
+      "author": "Anata",
+      "text": "je prefere sfml ^^"
+    },
+    {
+      "timestamp": 1453646435160,
+      "author": "Arubinu",
+      "text": "Trop chiant"
+    },
+    {
+      "timestamp": 1453646441526,
+      "author": "Arubinu",
+      "text": "Connais pas"
+    },
+    {
+      "timestamp": 1453646457006,
+      "author": "Anata",
+      "text": "http://www.sfml-dev.org/"
+    },
+    {
+      "timestamp": 1453646594381,
+      "author": "Arubinu",
+      "text": "Je vois, j'aurai du voir ça quand j'ai commencé l'école 42 ^^"
+    },
+    {
+      "timestamp": 1453646603611,
+      "author": "Anata",
+      "text": "^^"
+    },
+    {
+      "timestamp": 1453646617423,
+      "author": "Anata",
+      "text": "basé sur l'opengl, et lib low level"
+    },
+    {
+      "timestamp": 1453646619822,
+      "author": "Arubinu",
+      "text": "C'est là que j'ai appris le C.\nLe PHP/HTML/CSS/JS je connaissais bien avant"
+    },
+    {
+      "timestamp": 1453646620841,
+      "author": "Anata",
+      "text": "pas comme sdl ^^"
+    },
+    {
+      "timestamp": 1453646631453,
+      "author": "Arubinu",
+      "text": ":)"
+    },
+    {
+      "timestamp": 1453646712668,
+      "author": "Anata",
+      "text": "mais quand je vois ton code, me demande toujours comment tu arrive a t'y retrouver :D"
+    },
+    {
+      "timestamp": 1453646768510,
+      "author": "Arubinu",
+      "text": "lol"
+    },
+    {
+      "timestamp": 1453646808479,
+      "author": "Arubinu",
+      "text": "Je suis très bordélique parce que j'arrive pas à me fixer un ordre.\nJe veux ça, puis non je préfère ça, au final, je fais tout n'importe comment ^^"
+    },
+    {
+      "timestamp": 1453646821989,
+      "author": "Anata",
+      "text": "^^"
+    },
+    {
+      "timestamp": 1453646840288,
+      "author": "Arubinu",
+      "text": "Mais dans SuperPowers, c'est que j'ai pas vu comment séparer et j'ai pas envie de faire des tests pour le moments :P"
+    },
+    {
+      "timestamp": 1453646848032,
+      "author": "Anata",
+      "text": "va falloir que tu utilise les namespace ^^"
+    },
+    {
+      "timestamp": 1453646878197,
+      "author": "Arubinu",
+      "text": "En gros je range mes fonctions dedans?"
+    },
+    {
+      "timestamp": 1453646878319,
+      "author": "Arubinu",
+      "text": ""
+    },
+    {
+      "timestamp": 1453646887257,
+      "author": "Anata",
+      "text": "oui"
+    },
+    {
+      "timestamp": 1453646890677,
+      "author": "Arubinu",
+      "text": "D'accord"
+    },
+    {
+      "timestamp": 1453647001247,
+      "author": "Anata",
+      "text": "http://pastebin.com/jiT0iaQS"
+    },
+    {
+      "timestamp": 1453647004036,
+      "author": "Anata",
+      "text": "un exemple"
+    },
+    {
+      "timestamp": 1453647022790,
+      "author": "Anata",
+      "text": "et tu y accede via Game.player par exemple"
+    },
+    {
+      "timestamp": 1453647031942,
+      "author": "Anata",
+      "text": "ou Game.setScore(1)"
+    },
+    {
+      "timestamp": 1453647053571,
+      "author": "Anata",
+      "text": "a partir du moment que les variables ou fonction sont mis en Export"
+    },
+    {
+      "timestamp": 1453647058003,
+      "author": "Anata",
+      "text": "tu peux tout appeler"
+    },
+    {
+      "timestamp": 1453647086237,
+      "author": "Anata",
+      "text": "et ton script avec le  namespace, tu le met au dessus des autre"
+    },
+    {
+      "timestamp": 1453647094326,
+      "author": "Anata",
+      "text": "et tu y a acces partout ensuite"
+    },
+    {
+      "timestamp": 1453647099847,
+      "author": "Anata",
+      "text": "c'est hyper pratique"
+    },
+    {
+      "timestamp": 1453647181343,
+      "author": "Arubinu",
+      "text": "Je vois, et par contre, il faut mettre en paramètre 'this.actor' d'une fonction si on veut travailler dessus?"
+    },
+    {
+      "timestamp": 1453647203588,
+      "author": "Anata",
+      "text": "le namespace n'a aucun lien avec les acteurs"
+    },
+    {
+      "timestamp": 1453647237980,
+      "author": "Anata",
+      "text": "pour mon player, je le renseigne dans mon behavior"
+    },
+    {
+      "timestamp": 1453647249406,
+      "author": "Anata",
+      "text": "Game.player = Sup.getActor(\"World\").getChild(\"Player\");"
+    },
+    {
+      "timestamp": 1453647269519,
+      "author": "Arubinu",
+      "text": "D'accord :)"
+    },
+    {
+      "timestamp": 1453647269843,
+      "author": "Anata",
+      "text": "donc apres ca, partout, le jeu sait que ce qu'est Game.player"
+    },
+    {
+      "timestamp": 1453647304702,
+      "author": "Arubinu",
+      "text": "Du coup dans tes behavior tu n'as que les methodes de base?"
+    },
+    {
+      "timestamp": 1453647309963,
+      "author": "Anata",
+      "text": "oui"
+    },
+    {
+      "timestamp": 1453647313150,
+      "author": "Arubinu",
+      "text": "je vois :)"
+    },
+    {
+      "timestamp": 1453647323484,
+      "author": "Anata",
+      "text": "et c'est bien suffisant et assez propre au final"
+    },
+    {
+      "timestamp": 1453647336862,
+      "author": "Arubinu",
+      "text": "Oui je pense bien, je convertirai mon code :)"
+    },
+    {
+      "timestamp": 1453647345582,
+      "author": "Anata",
+      "text": "mon namespace me sert de code global pour les variables / fonctions"
+    },
+    {
+      "timestamp": 1453647379550,
+      "author": "Arubinu",
+      "text": "Oui c'est comme si t'avais une classe Game instancié"
+    },
+    {
+      "timestamp": 1453647381156,
+      "author": "Anata",
+      "text": "au depart, je faisai un peu comme toi aussi"
+    },
+    {
+      "timestamp": 1453647390900,
+      "author": "Anata",
+      "text": "je mettais le plus de code possible dans un script"
+    },
+    {
+      "timestamp": 1453647398434,
+      "author": "Anata",
+      "text": "mais au final, c'etait pas super lisible ^^"
+    },
+    {
+      "timestamp": 1453647417546,
+      "author": "Anata",
+      "text": "ouai, a part que ca n'a pas le comportement d'une class :D"
+    },
+    {
+      "timestamp": 1453647418478,
+      "author": "Arubinu",
+      "text": "Je sais bien que ce n'est pas lisible :P\nJe fais juste comme ça en attendant ^^"
+    },
+    {
+      "timestamp": 1453647427662,
+      "author": "Arubinu",
+      "text": "Oui :)"
+    },
+    {
+      "timestamp": 1453647529294,
+      "author": "Arubinu",
+      "text": "test mon sokoban vite fait"
+    },
+    {
+      "timestamp": 1453647530614,
+      "author": "Arubinu",
+      "text": ":)"
+    },
+    {
+      "timestamp": 1453647534308,
+      "author": "Anata",
+      "text": "mais bon, au final, c'est pas pour autant que je fasse du code propre et lisible ^^"
+    },
+    {
+      "timestamp": 1453647551864,
+      "author": "Anata",
+      "text": "si je met pas de commentaires, je m'y perd parfois aussi ^^"
+    },
+    {
+      "timestamp": 1453647563622,
+      "author": "Arubinu",
+      "text": "Bah pour avoir un code bien foutu, il faut avoir un projet fini. Que l'on voit bien dans son ensemble :)"
+    },
+    {
+      "timestamp": 1453647584416,
+      "author": "Arubinu",
+      "text": "Pour moi ça va :D je me perds pas trop. Mais après, ce sont des petits scripts :)"
+    },
+    {
+      "timestamp": 1453647716759,
+      "author": "Anata",
+      "text": "ca va, fonctionne bien ton sokoban"
+    },
+    {
+      "timestamp": 1453647739278,
+      "author": "Arubinu",
+      "text": ":D"
+    },
+    {
+      "timestamp": 1453647784070,
+      "author": "Arubinu",
+      "text": "Il est presque fini au final"
+    },
+    {
+      "timestamp": 1453647790777,
+      "author": "Arubinu",
+      "text": "Faut pas grand chose pour un sokoban"
+    },
+    {
+      "timestamp": 1453648576100,
+      "author": "Anata",
+      "text": "non, c'est clair"
+    },
+    {
+      "timestamp": 1453648588575,
+      "author": "Anata",
+      "text": "le mien, c'est parce que je voulais un deplacement fluide ^^"
+    },
+    {
+      "timestamp": 1453648727143,
+      "author": "Arubinu",
+      "text": "Oui :) je vois"
+    },
+    {
+      "timestamp": 1453648743119,
+      "author": "Arubinu",
+      "text": "Après"
+    },
+    {
+      "timestamp": 1453648767584,
+      "author": "Arubinu",
+      "text": "Je peux mettre deux sprites symbolisant le jour et la caisse par dessus pour le déplacement :P"
+    },
+    {
+      "timestamp": 1453648777002,
+      "author": "Arubinu",
+      "text": "joueur*"
+    },
+    {
+      "timestamp": 1453649773267,
+      "author": "Anata",
+      "text": "y'a moyn de restart un level dans ton sukoban ? ^^"
+    },
+    {
+      "timestamp": 1453649777132,
+      "author": "Anata",
+      "text": "je suis bloqué"
+    },
+    {
+      "timestamp": 1453649778967,
+      "author": "Anata",
+      "text": ":)"
+    },
+    {
+      "timestamp": 1453649849337,
+      "author": "Arubinu",
+      "text": "Oui"
+    },
+    {
+      "timestamp": 1453649853455,
+      "author": "Arubinu",
+      "text": "Mais pas en létat"
+    },
+    {
+      "timestamp": 1453649866775,
+      "author": "Arubinu",
+      "text": "Désolé ^^"
+    },
+    {
+      "timestamp": 1453649873543,
+      "author": "Arubinu",
+      "text": "A la limite si tu veux continuer"
+    },
+    {
+      "timestamp": 1453649882959,
+      "author": "Arubinu",
+      "text": "Modifie le code pour qu'il commence au niveau que tu veux"
+    },
+    {
+      "timestamp": 1453649898407,
+      "author": "Arubinu",
+      "text": "ligne 166"
+    },
+    {
+      "timestamp": 1453649944135,
+      "author": "Arubinu",
+      "text": "N'hésites pas à copier les grilles. Je les ai copié moi même je ne sais plus où"
+    },
+    {
+      "timestamp": 1453652632290,
+      "author": "Arubinu",
+      "text": "C'est énervant de ne pas avoir photoshop -_-'"
+    },
+    {
+      "timestamp": 1453658687018,
+      "author": "Arubinu",
+      "text": "re, c'est déjà mieux là pour tester le Sokoban ^^"
+    },
+    {
+      "timestamp": 1453676051417,
+      "author": "Arubinu",
+      "text": "Bon j'ai presque fini.\nMe reste à ajouter la saisie du code et d'ajouter des niveaux :)"
+    },
+    {
+      "timestamp": 1453676063139,
+      "author": "Arubinu",
+      "text": "Je vais aller dormir parce que je suis crevé depuis un moment."
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+[
+  {
+    "id": "14",
+    "name": "Font",
+    "type": "font"
+  },
+  {
+    "id": "20",
+    "name": "Tiles",
+    "type": null,
+    "children": [
+      {
+        "id": "3",
+        "name": "cases",
+        "type": "tileSet"
+      },
+      {
+        "id": "22",
+        "name": "background",
+        "type": "tileSet"
+      },
+      {
+        "id": "33",
+        "name": "menuMap",
+        "type": "tileMap"
+      },
+      {
+        "id": "24",
+        "name": "moveMap",
+        "type": "tileMap"
+      },
+      {
+        "id": "21",
+        "name": "backgroundMap",
+        "type": "tileMap"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Levels",
+    "type": null,
+    "children": [
+      {
+        "id": "1",
+        "name": "1.U61H",
+        "type": "tileMap"
+      },
+      {
+        "id": "5",
+        "name": "2.4SGK",
+        "type": "tileMap"
+      },
+      {
+        "id": "6",
+        "name": "3.PT8H",
+        "type": "tileMap"
+      },
+      {
+        "id": "7",
+        "name": "4.22OF",
+        "type": "tileMap"
+      },
+      {
+        "id": "4",
+        "name": "5.BE2L",
+        "type": "tileMap"
+      },
+      {
+        "id": "8",
+        "name": "6.0ARD",
+        "type": "tileMap"
+      },
+      {
+        "id": "10",
+        "name": "7.Y9AT",
+        "type": "tileMap"
+      },
+      {
+        "id": "11",
+        "name": "8.D89U",
+        "type": "tileMap"
+      },
+      {
+        "id": "12",
+        "name": "9.I5YH",
+        "type": "tileMap"
+      },
+      {
+        "id": "13",
+        "name": "10.2U84",
+        "type": "tileMap"
+      }
+    ]
+  },
+  {
+    "id": "15",
+    "name": "Sprites",
+    "type": null,
+    "children": [
+      {
+        "id": "25",
+        "name": "help",
+        "type": "sprite"
+      },
+      {
+        "id": "19",
+        "name": "title",
+        "type": "sprite"
+      },
+      {
+        "id": "30",
+        "name": "arrow",
+        "type": "sprite"
+      },
+      {
+        "id": "26",
+        "name": "cloud",
+        "type": "sprite"
+      },
+      {
+        "id": "16",
+        "name": "menus",
+        "type": "sprite"
+      },
+      {
+        "id": "32",
+        "name": "return",
+        "type": "sprite"
+      },
+      {
+        "id": "27",
+        "name": "select",
+        "type": "sprite"
+      },
+      {
+        "id": "31",
+        "name": "gameover",
+        "type": "sprite"
+      },
+      {
+        "id": "17",
+        "name": "background",
+        "type": "sprite"
+      },
+      {
+        "id": "29",
+        "name": "fullscreen",
+        "type": "sprite"
+      }
+    ]
+  },
+  {
+    "id": "23",
+    "name": "GameMap",
+    "type": "tileMap"
+  },
+  {
+    "id": "28",
+    "name": "PreviewMap",
+    "type": "tileMap"
+  },
+  {
+    "id": "0",
+    "name": "Main Scene",
+    "type": "scene"
+  },
+  {
+    "id": "40",
+    "name": "Scripts",
+    "type": null,
+    "children": [
+      {
+        "id": "38",
+        "name": "Game.Map",
+        "type": "script"
+      },
+      {
+        "id": "42",
+        "name": "Game.Keys",
+        "type": "script"
+      },
+      {
+        "id": "41",
+        "name": "Game.Main",
+        "type": "script"
+      },
+      {
+        "id": "39",
+        "name": "Game.Level",
+        "type": "script"
+      },
+      {
+        "id": "37",
+        "name": "Game.Player",
+        "type": "script"
+      },
+      {
+        "id": "35",
+        "name": "Game",
+        "type": "script"
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "name": "Main",
+    "type": "script"
+  }
+]

@@ -1,0 +1,79 @@
+{
+  "formatVersion": 3,
+  "maps": [
+    "map"
+  ],
+  "filtering": "pixelated",
+  "wrapping": "clampToEdge",
+  "pixelsPerUnit": 100,
+  "framesPerSecond": 10,
+  "opacity": 1,
+  "alphaTest": 0.1,
+  "frameOrder": "rows",
+  "grid": {
+    "width": 258,
+    "height": 38
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 0.5
+  },
+  "animations": [
+    {
+      "id": "0",
+      "name": "NewGame",
+      "startFrameIndex": 0,
+      "endFrameIndex": 0,
+      "speed": 1
+    },
+    {
+      "id": "1",
+      "name": "Play",
+      "startFrameIndex": 1,
+      "endFrameIndex": 1,
+      "speed": 1
+    },
+    {
+      "id": "2",
+      "name": "Continue",
+      "startFrameIndex": 2,
+      "endFrameIndex": 2,
+      "speed": 1
+    },
+    {
+      "id": "3",
+      "name": "Restart",
+      "startFrameIndex": 3,
+      "endFrameIndex": 3,
+      "speed": 1
+    },
+    {
+      "id": "4",
+      "name": "Settings",
+      "startFrameIndex": 4,
+      "endFrameIndex": 4,
+      "speed": 1
+    },
+    {
+      "id": "5",
+      "name": "Exit",
+      "startFrameIndex": 5,
+      "endFrameIndex": 5,
+      "speed": 1
+    },
+    {
+      "id": "6",
+      "name": "EnterCode",
+      "startFrameIndex": 6,
+      "endFrameIndex": 6,
+      "speed": 1
+    }
+  ],
+  "mapSlots": {
+    "map": "map",
+    "light": null,
+    "specular": null,
+    "alpha": null,
+    "normal": null
+  }
+}

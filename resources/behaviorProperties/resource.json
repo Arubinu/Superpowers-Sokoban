@@ -1,0 +1,15 @@
+{
+  "behaviors": {
+    "MainBehavior": {
+      "scriptId": "9",
+      "line": 40,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "mode",
+          "type": "number"
+        }
+      ]
+    }
+  }
+}
