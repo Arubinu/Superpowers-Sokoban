@@ -100,6 +100,7 @@ namespace Game
     {
       score = 0;
       end = false;
+      touch = false;
       let temporary = scene.getChild( 'Temporary' ).tileMapRenderer;
 
       if ( next )
@@ -142,13 +143,13 @@ namespace Game
     let map = current.getTileMap();
     if ( ended() )
     {
-      let stats = Sup.Storage.getJSON( Game.Main.getCode() );
+      let stats = Sup.Storage.getJSON( Game.Main.Code.get() );
       stats = stats ? stats : { try: 0, move: 0 };
 
-      Sup.Storage.setJSON( Game.Main.getCode(), { try: stats.try + 1, move: ( stats.move && stats.move <= score ) ? stats.move : score } );
+      Sup.Storage.setJSON( Game.Main.Code.get(), { try: stats.try + 1, move: ( stats.move && stats.move <= score ) ? stats.move : score } );
 
       let result = 'Score actuel: ' + stats.move;
-      if ( !stats.move || stats.move > Sup.Storage.getJSON( Game.Main.getCode() ).move )
+      if ( !stats.move || stats.move > Sup.Storage.getJSON( Game.Main.Code.get() ).move )
         result = 'Nouveau score: ' + score;
       scene.getChild( 'Score' ).textRenderer.setText( 'Niveau terminé ! ' + result );
 
@@ -157,28 +158,31 @@ namespace Game
     }
 
     let move = { x: 0, y: 0 };
-    if ( Sup.Input.wasTouchEnded( 0 ) && touch )
+    if ( !start )
     {
-      if ( debug )
-        Sup.log( 'Touch End' );
-
-      touch = false;
-      let pos = Sup.Input.getTouchPosition( 0 );
-      if ( swipe && pos )
+      if ( Sup.Input.wasTouchEnded( 0 ) && touch )
       {
-        let x = swipe.x - pos.x;
-        let y = swipe.y - pos.y;
+        if ( debug )
+          Sup.log( 'Touch End' );
 
-        if ( Math.abs( x ) > Math.abs( y ) )
-          move.x = ( x < 0 ) ? 1 : -1;
-        else
-          move.y = ( y < 0 ) ? 1 : -1;
+        touch = false;
+        let pos = Sup.Input.getTouchPosition( 0 );
+        if ( swipe && pos )
+        {
+          let x = swipe.x - pos.x;
+          let y = swipe.y - pos.y;
+
+          if ( Math.abs( x ) > Math.abs( y ) )
+            move.x = ( x < 0 ) ? 1 : -1;
+          else
+            move.y = ( y < 0 ) ? 1 : -1;
+        }
       }
-    }
-    else if ( Sup.Input.wasTouchStarted( 0 ) )
-    {
-      touch = true;
-      swipe = Sup.Input.getTouchPosition( 0 );
+      else if ( Sup.Input.wasTouchStarted( 0 ) )
+      {
+        touch = true;
+        swipe = Sup.Input.getTouchPosition( 0 );
+      }
     }
 
     if ( Game.Keys.getUp( true ) )

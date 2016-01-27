@@ -4,9 +4,6 @@ namespace Game.Main
   let select: number = 0;
   let disabled = [ 2, 3 ];
 
-  let delay: number;
-  let keys: string = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-
   let preview: Sup.TileMapRenderer;
 
   // Getters
@@ -23,19 +20,6 @@ namespace Game.Main
   export function getDisabled(): number[]
   {
     return ( disabled );
-  }
-
-  export function getCode(): string
-  {
-    let code = '';
-    let children = scene.getChild( 'Code' ).getChildren();
-    for ( let child of children )
-    {
-      if ( child.getName().length == 1 )
-        code += child.getChild( 'Letter' ).textRenderer.getText()[ 0 ];
-    }
-
-    return ( code );
   }
 
   // Setters
@@ -64,16 +48,7 @@ namespace Game.Main
   {
     preview = map;
   }
-/*
-  export function setCode( code: string )
-  {
-    for ( let i = 1; i <= 4; ++i )
-    {
-      let child = scene.getChild( 'Code' ).getChild( i.toString() ).getChild( 'Letter' );
-      child.textRenderer.setText( code[ i - 1 ] );
-    }
-  }
-*/
+
   // Methods
   export function init( actor: Sup.Actor, preview: Sup.TileMapRenderer )
   {
@@ -81,6 +56,7 @@ namespace Game.Main
 
     set( 0 );
     setPreview( preview );
+    Game.Main.Code.init( scene.getChild( 'Code' ) );
   }
 
   export function behavior( start?: boolean )
@@ -129,114 +105,5 @@ namespace Game.Main
       menu.getChildren()[ child ].spriteRenderer.setOpacity( Game.started() ? 1 : .5 );
 
     Sup.getActor( 'Select' ).setLocalY( children[ get() + 1 ].getLocalY() - .05 );
-  }
-
-  export function code( start?: boolean )
-  {
-    let scene_code = scene.getChild( 'Code' );
-    if ( start )
-    {
-      if ( Game.debug )
-        Sup.log( 'Game.Main.code()' );
-
-      delay = 0;
-      set( 0 );
-      scene_code.setVisible( true );
-    }
-
-    ++delay;
-    let up = Game.Keys.getUp();
-    let down = Game.Keys.getDown();
-    let left = Game.Keys.getLeft( true );
-    let right = Game.Keys.getRight( true );
-    plus( right && get() < 4 );
-    minus( left && get() > 0 );
-
-    if ( Sup.Input.wasTouchStarted( 0 ) )
-       scene_code.getChild( 'OK' ).setVisible( true );
-
-    let elems = new Array<Sup.Actor>();
-    elems.push( scene_code.getChild( 'OK' ).getChild( 'Map' ) );
-    for ( let i = 1; i <= 4; ++i )
-    {
-      let children = scene_code.getChild( i.toString() ).getChildren();
-      for ( let child of children )
-        elems.push( child );
-    }
-
-    let click = false;
-    let valid = false;
-    let hits = onClick( 'Camera', elems );
-    for ( let hit of hits )
-    {
-      let parent = hit.actor.getParent().getName();
-      Sup.log( parent, hit.actor.getName() );
-      if ( parent.length == 1 )
-      {
-        click = true;
-        let name = hit.actor.getName();
-        up = ( name == 'ArrowUp' ) ? true : up;
-        down = ( name == 'ArrowDown' ) ? true : down;
-
-        let choice = parseInt( parent );
-        if ( choice > 0 && choice <= 4 )
-        {
-          left = ( choice < get() ) ? true : left;
-          right = ( choice > get() ) ? true : right;
-          set( choice - 1 );
-        }
-      }
-      else if (  hit.actor.getName() == 'Map' )
-        valid = true;
-    }
-
-    let choice = scene_code.getChild( ( get() + 1 ).toString() ).getChild( 'Letter' );
-    if ( start || up || down || left || right )
-    {
-      if ( !start && !click && delay < 8 )
-        return ;
-
-      delay = 0;
-      if ( start || left || right )
-      {
-        let children = scene_code.getChildren();
-        for ( let child of children )
-        {
-          if ( child.getName().length == 1 )
-            child.getChild( 'Letter' ).textRenderer.setOpacity( .5 );
-        }
-
-        choice.textRenderer.setOpacity( 1 );
-      }
-      if ( up || down )
-      {
-        let letter = choice.textRenderer.getText()[ 0 ];
-        let pos = keys.indexOf( letter );
-
-        if ( up && pos > 0 )
-          choice.textRenderer.setText( keys[ pos - 1 ] );
-        else if ( down && pos >= 0 && pos < ( keys.length - 1 ) )
-          choice.textRenderer.setText( keys[ pos + 1 ] );
-      }
-    }
-    else if ( valid ||  Game.Keys.getEnter( true ) )
-    {
-      let level = Game.Level.getNumber( Game.Main.getCode() );
-      if ( Game.debug )
-        Sup.log( 'Game.code()', 'level: ' + level );
-
-      if ( level )
-      {
-        Game.started( true );
-        Game.Level.set( level );
-
-        Game.behavior( true );
-        Game.setMode( 2 );
-      }
-      else
-        Game.setMode( 0 );
-    }
-    else if ( Game.Keys.getReturn( true ) )
-      Game.setMode( 0 );
   }
 }

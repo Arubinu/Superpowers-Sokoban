@@ -83,7 +83,7 @@ class MainBehavior extends Sup.Behavior
       case 1: Game.setMode( 2 ); Game.Level.set( 1 ); Game.behavior( start ); break ;
       case 2: Game.behavior( false ); break ;
       case 3: Game.setMode( 2 ); Game.behavior( true ); break ;
-      case 4: Game.Main.code( start ); break ;
+      case 4: Game.Main.Code.behavior( start ); break ;
       case 6: Game.over(); break ;
       case 5: Sup.exit(); break ;
       default: Game.Main.behavior( start );
