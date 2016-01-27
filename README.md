@@ -1,4 +1,4 @@
-SuperPowers Sokoban
+Superpowers Sokoban
 ====================
 
 Retrouvez ici un Sokoban au design simple jouable au clavier ou à la manette !
